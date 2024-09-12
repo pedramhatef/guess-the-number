@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top section with the game -->
+        <div class="top-section">
+            <h1>Guess the Number (1-10)</h1>
+            <div id="buttons-container">
+                <!-- Guess buttons will be generated here -->
+            </div>
+            <p id="message"></p>
+            <p id="attempts"></p>
+
+            <!-- Connect Wallet and Back buttons -->
+            <button id="connect-wallet">Connect Wallet</button>
+            <button id="back-button" style="display:none;">Back</button> <!-- Initially hidden -->
+            <!-- Reset game button -->
+            <button id="reset" style="display:none;">Reset Game</button>
+        </div>
+
+        <!-- Bottom section for wallet connection (iframe) -->
+        <div class="bottom-section">
+            <iframe src="https://pedramhatef.github.io/my-twa" id="wallet-frame"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
