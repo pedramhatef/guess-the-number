@@ -45,19 +45,9 @@ document.getElementById("reset").addEventListener("click", function() {
     }
 });
 
-// Connect Wallet and Back buttons functionality
+// Redirect to wallet connection URL
 document.getElementById("connect-wallet").addEventListener("click", function() {
-    // Split the screen when Connect Wallet is pressed
-    document.querySelector(".bottom-section").style.display = "block";
-    document.getElementById("connect-wallet").style.display = "none";
-    document.getElementById("back-button").style.display = "inline"; // Show the back button
-});
-
-document.getElementById("back-button").addEventListener("click", function() {
-    // Restore to the single screen layout
-    document.querySelector(".bottom-section").style.display = "none";
-    document.getElementById("connect-wallet").style.display = "inline";
-    document.getElementById("back-button").style.display = "none"; // Hide the back button
+    window.location.href = "https://pedramhatef.github.io/my-twa";
 });
 
 // Initialize the game

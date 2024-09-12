@@ -10,28 +10,7 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 100%;
-}
-
-/* Top section (game) */
-.top-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-}
-
-/* Bottom section (iframe for wallet connection) */
-.bottom-section {
-    flex: 1;
-    display: none;
-    background-color: #f0f0f0;
-    border-top: 2px solid #ccc;
 }
 
 /* Buttons styling */
@@ -46,19 +25,23 @@ button {
     border-radius: 5px;
 }
 
-#back-button {
-    background-color: #dc3545; /* Red color for the back button */
+#connect-wallet {
+    background-color: #28a745;
 }
 
-    #back-button:hover {
-        background-color: #c82333; /* Darker red on hover */
+    #connect-wallet:hover {
+        background-color: #218838;
     }
 
-#connect-wallet:hover {
-    background-color: #e0a800; /* Yellow hover for connect wallet */
+#reset {
+    background-color: #007bff;
 }
 
-/* Guess buttons container */
+    #reset:hover {
+        background-color: #0056b3;
+    }
+
+/* Guess buttons */
 #buttons-container {
     display: flex;
     justify-content: center;
@@ -83,11 +66,4 @@ button {
 #message, #attempts {
     font-size: 1.2em;
     margin-top: 10px;
-}
-
-/* Iframe styling */
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
 }

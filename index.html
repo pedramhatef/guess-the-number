@@ -8,26 +8,17 @@
 </head>
 <body>
     <div class="container">
-        <!-- Top section with the game -->
-        <div class="top-section">
-            <h1>Guess the Number (1-10)</h1>
-            <div id="buttons-container">
-                <!-- Guess buttons will be generated here -->
-            </div>
-            <p id="message"></p>
-            <p id="attempts"></p>
-
-            <!-- Connect Wallet and Back buttons -->
-            <button id="connect-wallet">Connect Wallet</button>
-            <button id="back-button" style="display:none;">Back</button> <!-- Initially hidden -->
-            <!-- Reset game button -->
-            <button id="reset" style="display:none;">Reset Game</button>
+        <!-- Game Section -->
+        <h1>Guess the Number (1-10)</h1>
+        <div id="buttons-container">
+            <!-- Guess buttons will be generated here -->
         </div>
+        <p id="message"></p>
+        <p id="attempts"></p>
 
-        <!-- Bottom section for wallet connection (iframe) -->
-        <div class="bottom-section">
-            <iframe src="https://pedramhatef.github.io/my-twa" id="wallet-frame"></iframe>
-        </div>
+        <!-- Connect Wallet and Reset buttons -->
+        <button id="connect-wallet">Connect Wallet</button>
+        <button id="reset" style="display:none;">Reset Game</button>
     </div>
 
     <script src="script.js"></script>
