@@ -45,9 +45,18 @@ document.getElementById("reset").addEventListener("click", function() {
     }
 });
 
-// Redirect to wallet connection URL
+// Connect Wallet with Popup logic
 document.getElementById("connect-wallet").addEventListener("click", function() {
-    window.location.href = "https://pedramhatef.github.io/my-twa";
+    let walletPopup = window.open("https://pedramhatef.github.io/my-twa", "_blank", "width=600,height=600");
+
+    // Polling to detect when the popup is closed
+    let popupCheck = setInterval(() => {
+        if (walletPopup.closed) {
+            clearInterval(popupCheck);
+            // You can add logic here if you want to display something after closing the wallet
+            alert("Wallet connection completed.");
+        }
+    }, 500);
 });
 
 // Initialize the game
